@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#wholeGameBox {
+  text-align: center;
+}
+
+#bigGameTitle {
+  font-size: 2.5rem;
+  color: rgb(45, 18, 8);
+  margin-bottom: 0.5rem;
+}
+
+#movesCounterBox {
+  color: rgb(45, 18, 8);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.cardyBox {
+  width: 95px;
+  height: 120px;
+  background-color: #3a9eb9;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.cardyBox:hover {
+  transform: scale(1.05);
+}
+
+.cardyBox.flipped {
+  transform: rotateY(180deg);
+}
+
+.insidePart {
+  font-size: 2rem;
+  color: white;
+  backface-visibility: hidden;
+}
+
+#startOverBtn {
+  padding: 10px 25px;
+  background-color: #7a4fe4;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#startOverBtn:hover {
+  background-color: #5d3ecf;
+}
+/* SHAPES */
+
+/* .shape {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: white;
+}
+
+.square {
+  background-color: white;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid white;
+} */
+
